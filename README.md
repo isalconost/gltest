@@ -12,7 +12,6 @@ Vadim
 
 Welcome Again, Second time
 --------------------------
-Ilya
 ____________
 
 Vadim
