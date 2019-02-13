@@ -4,7 +4,7 @@
 [![Stable Version](https://poser.pugx.org/yoast/wordpress-seo/v/stable.svg)](https://packagist.org/packages/yoast/wordpress-seo)
 [![License](https://poser.pugx.org/yoast/wordpress-seo/license.svg)](https://packagist.org/packages/yoast/wordpress-seo)
 
-## Bienvenue dans le référentiel WordPress SEO GitHub
+ДОБРО ПОЖАЛОВАТЬ!!!!
 
 Настя
 
