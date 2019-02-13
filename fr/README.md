@@ -12,7 +12,7 @@
 
 Илья 2
 
-## ДОБРО ПОЖАДЛОВАТЬ ВТОРОЙ РАЗ
+## deuxième fois Bienvenue à nouveau,
 
 ---
 
