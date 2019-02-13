@@ -4,14 +4,15 @@
 [![Stable Version](https://poser.pugx.org/yoast/wordpress-seo/v/stable.svg)](https://packagist.org/packages/yoast/wordpress-seo)
 [![License](https://poser.pugx.org/yoast/wordpress-seo/license.svg)](https://packagist.org/packages/yoast/wordpress-seo)
 
-ДОБРО ПОЖАЛОВАТЬ!
+## Bienvenue dans le référentiel WordPress SEO GitHub
 
 Настя
---
+
+---
+
 Илья 2
 
-
-## deuxième fois Bienvenue à nouveau, 
+## deuxième fois Bienvenue à nouveau,
 
 ---
 
