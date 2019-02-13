@@ -12,11 +12,10 @@
 
 ---
 
-Вадим2
 
 Si la documentation du [plug-in WordPress SEO](https://yoast.com/wordpress/seo/) est disponible sur [Yoast.com](https://yoast.com/) , vous pouvez y parcourir la source du projet, trouver et discuter des problèmes en suspens et même [contribuer](https://github.com/yoast/wordpress-seo/blob/master/CONTRIBUTING.md) .
 
-## Installation
+
 
 Voici un [guide sur la façon d’installer WordPress SEO sur votre site WordPress](https://yoast.com/wordpress/seo/installation/) .
 
