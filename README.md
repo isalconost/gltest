@@ -9,9 +9,12 @@ Welcome to the WordPress SEO GitHub repository
 ----------------------------------------------
 
 Vadim
+
 Welcome Again, Second time
 --------------------------
 Ilya
+____________
+
 Vadim
 
 
