@@ -6,7 +6,7 @@
 
 ## Bienvenue dans le référentiel WordPress SEO GitHub
 
-Илья
+Настя
 --
 Илья 2
 
