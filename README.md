@@ -10,6 +10,9 @@ Welcome to the WordPress SEO GitHub repository
 
 Vadim
 
+---
+vadim2
+
 Welcome Again, Second time
 --------------------------
 ____________
