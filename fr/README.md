@@ -10,6 +10,8 @@
 
 ## Bienvenue à nouveau, deuxième fois
 
+Новый вадим в таргете
+
 ---
 
 
