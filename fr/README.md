@@ -6,7 +6,7 @@
 
 ## Bienvenue dans le référentiel WordPress SEO GitHub
 
-Вадим
+Вадзим
 
 ## Bienvenue à nouveau, deuxième fois
 
