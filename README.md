@@ -8,8 +8,12 @@ WordPress SEO by Yoast
 Welcome to the WordPress SEO GitHub repository
 ----------------------------------------------
 
+Vadim
 Welcome Again, Second time
 --------------------------
+Ilya
+Vadim
+
 
 
 
