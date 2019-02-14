@@ -42,13 +42,13 @@ it is not recommended for use in a production environment.
 This is a developer's portal for WordPress SEO by Yoast and should not be used for support. Please visit the
 [support forums](https://wordpress.org/support/plugin/wordpress-seo).
 
-## Reporting bugs
+## Reporter les problèmes (Issues)
 
 If you find an issue, [let us know here](https://github.com/yoast/wordpress-seo/issues/new)! Please follow [how to write a good bug report?](http://kb.yoast.com/article/180-how-to-write-a-good-bug-report) guidelines.
 
 It may help us a lot if you can provide a backtrace of the error encountered. You can use [code in this gist](https://gist.github.com/jrfnl/5925642) to enable the backtrace in your website's configuration.
 
-## Contributions
+## Guide de contribution
 
 Anyone is welcome to contribute to WordPress SEO. Please
 [read the guidelines](https://github.com/yoast/wordpress-seo/blob/master/CONTRIBUTING.md) for contributing to this
