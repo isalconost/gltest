@@ -1,54 +1,338 @@
-# WordPress SEO by Yoast
+<!DOCTYPE html>
+<html lang="fr">
 
-[![Build Status](https://api.travis-ci.org/Yoast/wordpress-seo.png?branch=master)](https://travis-ci.org/Yoast/wordpress-seo) [![Stable Version](https://poser.pugx.org/yoast/wordpress-seo/v/stable.svg)](https://packagist.org/packages/yoast/wordpress-seo) [![License](https://poser.pugx.org/yoast/wordpress-seo/license.svg)](https://packagist.org/packages/yoast/wordpress-seo)
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-## Welcome to the WordPress SEO GitHub repository
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Autify is a software QA automation platform powered by AI">
 
-Vadim
+    <title>Autify - Software QA automation platform powered by AI</title>
 
-* * *
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#ffbf00">
+    <meta name="msapplication-TileColor" content="#ffc40d">
+    <meta name="theme-color" content="#ffffff">
 
-vadim2
+    <meta property="og:title" content="Autify - Software QA automation platform powered by AI">
+    <meta property="og:url" content="https://autify.com">
+    <meta property="og:image" content="img/logos/logo_autify.png">
 
-## Welcome Again, Second time
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 
-* * *
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
-Vadim
+    <!-- Custom styles for this template -->
+    <link href="/css/main.css" rel="stylesheet">
 
-While the documentation for the [WordPress SEO plugin](https://yoast.com/wordpress/seo/) can be found on [Yoast.com](https://yoast.com/), here you can browse the source of the project, find and discuss open issues and even [contribute yourself](https://github.com/yoast/wordpress-seo/blob/master/CONTRIBUTING.md).
+    <!-- Source Sans Pro fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
 
-## Installation
+  </head>
 
-Here's a [guide on how to install WordPress SEO in your WordPress site](https://yoast.com/wordpress/seo/installation/).
+  <body id="page-top">
+    <script>
+      var defaultLanguage      = "en"
+      var alternativeLanguages = ["ja"]
+      var savedLanguage        = window.localStorage.getItem("language")
+      var pathname             = window.location.pathname
 
-If you want to run the Git version for development though, you can set it up with [Composer](https://getcomposer.org/):
+      function _currentLanguage() {
+        var paths = pathname.split("/").filter(function (item) { return item !== ''})
+        return (alternativeLanguages.includes(paths[0])) ? paths[0] : defaultLanguage
+      }
 
-```bash
-composer create-project yoast/wordpress-seo:dev-trunk --prefer-source --keep-vcs
-```
+      function _browserLanguage() {
+        var language = (navigator.languages && navigator.languages[0]) || navigator.language || navigator.userLanguage
+        return (alternativeLanguages.includes(language)) ? language.split("-")[0] : defaultLanguage
+      }
 
-Read more about [using Composer with WordPress SEO](https://github.com/Yoast/wordpress-seo/wiki/Using-Composer).
+      var nextLanguage    = savedLanguage || _browserLanguage()
+      var currentLanguage = _currentLanguage()
 
-This will download the latest development version of WordPress SEO by Yoast. While this version is usually stable, it is not recommended for use in a production environment.
+      if (currentLanguage !== nextLanguage) {
+        var paths = pathname.split("/").filter(function (item) { return item !== ''})
+        if (nextLanguage === defaultLanguage) {
+          if (alternativeLanguages.includes(paths[0])) {
+            paths.shift()
+          }
+        } else {
+          if (alternativeLanguages.includes(paths[0])) {
+            // replace
+            paths[0] = nextLanguage
+          } else {
+            // unshift
+            paths.unshift(nextLanguage)
+          }
+        }
 
-## Support
+        window.location.href = "/" + paths.join("/")
+      }
+    </script>
 
-This is a developer's portal for WordPress SEO by Yoast and should not be used for support. Please visit the [support forums](https://wordpress.org/support/plugin/wordpress-seo).
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122811359-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-## Reporting bugs
+      gtag('config', 'UA-122811359-1');
+    </script>
 
-If you find an issue, [let us know here](https://github.com/yoast/wordpress-seo/issues/new)! Please follow [how to write a good bug report?](http://kb.yoast.com/article/180-how-to-write-a-good-bug-report) guidelines.
+    <!-- Navigation -->
+    
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top" id="mainNav">
+    
 
-It may help us a lot if you can provide a backtrace of the error encountered. You can use [code in this gist](https://gist.github.com/jrfnl/5925642) to enable the backtrace in your website's configuration.
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="/">
+          <img class="mx-auto" src="/img/logos/logo_autify.png" alt="behivee" height="50">
+        </a>
 
-## Contributions
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-Anyone is welcome to contribute to WordPress SEO. Please [read the guidelines](https://github.com/yoast/wordpress-seo/blob/master/CONTRIBUTING.md) for contributing to this repository.
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="nav navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="/cdn-cgi/l/email-protection#96fff8f0f9d6f7e3e2fff0efb8f5f9fb">Contact us</a>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav">
+            <li class="nav-item">
+              <a class="btn btn-behivee-primary navbar-btn" href="/#requestdemo">Request demo</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                English
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                
+                   
+                  
+                    
+                      <div class="dropdown-item js-language-dropdown-item" data-href="/ja/" data-lang="ja" style="cursor: pointer">日本語</div>
+                  
+                
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-There are various ways you can contribute:
+    <!-- About Us -->
+<header class="masthead">
+  <div class="container">
+    <div class="intro-text">
+      <div class="intro-heading text-uppercase">Повышение творческого потенциала людей с помощью технологий</div>
+      <div class="intro-heading text-uppercase">И снова повышение творческого потенциала</div>
+    </div>
+  </div>
+</header>
 
-* [Raise an issue](https://github.com/yoast/wordpress-seo/issues) on GitHub.
-* Send us a Pull Request with your bug fixes and/or new features.
-* [Translate WordPress SEO by Yoast into different languages](http://translate.yoast.com/projects/wordpress-seo/).
-* Provide feedback and [suggestions on enhancements](https://github.com/yoast/wordpress-seo/issues?direction=desc&labels=Enhancement&page=1&sort=created&state=open).
+<!-- Team -->
+<section class="bg-light" id="team">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading text-uppercase">Équipe</h2>
+        <h3 class="section-subheading text-muted">Fondée à San Francisco et à Tokyo</h3>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-6">
+        <div class="team-member">
+          <img class="team-member-pic mx-auto mt-4 rounded-circle" src="/img/team/ryo.jpg" alt="Ryo Chikazawa">
+          <h4 class="name_font">Ryo Chikazawa</h4>
+          <p class="text_body">CEO | Co-founder</p>
+          <ul class="list-inline social-buttons mx-auto">
+            <li class="list-inline-item">
+              <a href="https://twitter.com/chikathreesix" target="_blank">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://github.com/chikathreesix" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.linkedin.com/in/ryo-chikazawa-01533749" target="_blank">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-6">
+        <div class="team-member">
+          <img class="team-member-pic mx-auto mt-4 rounded-circle" src="/img/team/sam.jpg" alt="Sam Yamashita">
+          <h4 class="name_font">Sam Yamashita</h4>
+          <p class="text_body">Ingénieur | Co-fondateur</p>
+          <ul class="list-inline social-buttons mx-auto">
+            <li class="list-inline-item">
+              <a href="https://twitter.com/sota0805" target="_blank">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://github.com/sotayamashita" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.linkedin.com/in/sotayamashita/" target="_blank">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Company -->
+<section id="about">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading text-uppercase">Entreprise</h2>
+        <h3 class="section-subheading text-muted"></h3>
+      </div>
+    </div>
+    <div class="row">
+      <table class="table table-bordered col-sm-6">
+        <tr>
+          <th>Company name</th>
+          <td class="text_body">Autify, Inc.</td>
+        </tr>
+        <tr>
+          <th>Founding date</th>
+          <td class="text_body">Septembre 2016</td>
+        </tr>
+        <tr>
+          <th>Total funding amount</th>
+          <td class="text_body">1</td>
+        </tr>
+        <tr>
+          <th>CEO</th>
+          <td class="text_body">Ryo Chikazawa</td>
+        </tr>
+        <tr>
+          <th>Emplacements</th>
+          <td class="text_body">
+            <dl>
+              <dt>US office</dt>
+              <dd>1390 Market St, Suite 200, San Francisco, CA 94102</dd>
+            </dl>
+            <dl>
+              <dt>Bureau au Japon</dt>
+              <dd>Blume TAKAHASHI 302, 1-20-9 Nihonbashikakigracho, Chuo-ku, Tokyo Japon, 103-0014</dd>
+            </dl>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- Access -->
+<section id="access" class="bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading text-uppercase">Accès</h2>
+        <h3 class="section-subheading text-muted">Global locations</h3>
+      </div>
+    </div>
+    <div class="row text-center">
+      <div class="col-md-6">
+        <h4 class="subheading">US office</h4>
+        <iframe frameborder="0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCm3ADbsvTqihvUEGnx_EOn_EK068znQl8&amp;q=1390%20Market%20St,%20Suite%20200,%20San%20Francisco,%20CA%2094102" allowfullscreen>
+        </iframe>
+      </div>
+      <div class="col-md-6">
+        <h4 class="subheading">Bureau au Japon</h4>
+        <iframe frameborder="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.814988326045!2d139.78144151453048!3d35.68155728019418!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018898ff46054df%3A0xadb428350f2dee2c!2sContelize%2C+Inc.!5e0!3m2!1sen!2sus!4v1539541807942" allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading text-uppercase text-dark">Contact us</h2>
+        <h3 class="section-subheading text-muted">Vous avez des questions sur nous? Envoyez-nous un message et nous vous recontacterons.</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <a class="btn btn-behivee-primary btn-xl text-uppercase" href="/cdn-cgi/l/email-protection#82ebece4edc2e3f7f6ebe4fbace1edef">Envoyer le message</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Footer -->
+    <footer class="navbar navbar-expand-lg navbar-footer">
+      <div class="container">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/about">À propos de nous</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/cdn-cgi/l/email-protection#e68f888089a68793928f809fc885898b">Contact us</a>
+          </li>
+          <!--
+          <li class="nav-item">
+            <a class="nav-link" href="/terms.html">Terms of Service</a>
+          </li>
+          -->
+        </ul>
+        <span class="navbar-text text-muted">Copyright ©  2019 Autify, Inc. All rights reserved</span>
+      </div>
+    </footer>
+
+    <!-- Contact form JavaScript -->
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+      var items = document.querySelectorAll('.js-language-dropdown-item')
+      for (var i =0; i < items.length; i+= 1) {
+        items[i].addEventListener('click', function(evt) {
+           window.localStorage.setItem("language", evt.target.dataset.lang || "en")
+           window.location.href = evt.target.dataset.href
+        })
+      }
+
+      var langInput = document.querySelector('#mce-LANG')
+      if (langInput && _currentLanguage) {
+        langInput.value = _currentLanguage()
+      }
+    </script>
+    <script src="/js/jqBootstrapValidation.js"></script>
+    <script src="/js/contact_me.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="/js/agency.js"></script>
+
+  </body>
+
+</html>
